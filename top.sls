@@ -3,7 +3,7 @@
 #
 base:
   '*':
-    - ntp # Example state
+    - infra-services
   'centos6':
     - match: nodegroup
     - c6repo
