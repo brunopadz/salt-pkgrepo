@@ -21,3 +21,13 @@ zabbix-agent:
 pmpagent:
   pkg:
     - installed
+    ntp:
+#
+# NTPd
+#
+pkg:
+    - installed
+ntpd:
+  service.running:
+    - enable: True
+
